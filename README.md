@@ -5,7 +5,63 @@ Official [Swetrix Analytics](https://swetrix.com/?ref=github-swetrix-nextjs) int
 
 # Integration
 
-// todo
+### Install
+
+Run the following command to install in your project:
+
+```
+npm install @swetrix/nextjs
+```
+
+Or with yarn:
+
+```
+yarn add @swetrix/nextjs
+```
+
+### Basic usage
+
+You can now import, and use the Swetrix hook on your project:
+
+```javascript
+// ./pages/_app.js
+
+import { useSwetrix } from '@swetrix/nextjs'
+
+function YourApp({ Component, pageProps }) {
+  useSwetrix('YOUR_PROJECT_ID')
+
+  return <Component {...pageProps} />
+}
+
+export default YourApp
+```
+
+### Debug-mode
+
+When developing in localhost, Swetrix does not send events to avoid using your quota. \
+You can enable debug mode to send events when testing things locally. It will also log messages to console.
+
+```javascript
+// ./pages/_app.js
+
+import { useSwetrix } from '@swetrix/nextjs'
+
+function YourApp({ Component, pageProps }) {
+  useSwetrix('YOUR_SITE_ID', {
+    debug: true
+  })
+
+  return <Component {...pageProps} />
+}
+
+export default YourApp
+```
+
+### Advanced options
+`useSwetrix` hook accepts 3 parameters: `PID`, `initOptions`, `pageViewsOptions`. \
+See our [documentation](https://swetrix.com/docs) page for more details. \
+You can always [contact](https://swetrix.com/contact) us in case of any questions! :)
 
 # Contribution
 
