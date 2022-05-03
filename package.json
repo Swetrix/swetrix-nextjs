@@ -1,5 +1,5 @@
 {
-  "name": "swetrix-nextjs",
+  "name": "@swetrix/nextjs",
   "version": "1.0.0",
   "description": "Official Swetrix Analytics integration for Next.js",
   "repository": {
