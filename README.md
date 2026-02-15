@@ -1,4 +1,5 @@
-<img src="https://swetrix.com/assets/logo_blue.svg" alt="" height="100" />
+> [!WARNING]
+> This package has been deprecated, if you're using Swetrix with Next.js - you should refer to our [Next.js integration docs](https://docs.swetrix.com/nextjs-integration).
 
 # Swetrix Next.js integration
 Official [Swetrix Analytics](https://swetrix.com/?ref=github-swetrix-nextjs) integration for Next.js.
